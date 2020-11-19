@@ -22,7 +22,6 @@ ADMIN_PUBLIC_KEY = IrohaCrypto.derive_public_key(ADMIN_PRIVATE_KEY)
 iroha = Iroha(ADMIN_ACCOUNT_ID)
 net = IrohaGrpc('{}:{}'.format(IROHA_HOST_ADDR, IROHA_PORT))
 
-# Refinery
 GROUP_PRIVATE_KEY='f101537e319568c765b2cc89698325604991dca57b9716b58016b253506caba1'
 group = {
 'account' : "group@test",
@@ -44,7 +43,6 @@ bob = {
     'public_key' : IrohaCrypto.derive_public_key(BOB_PRIVATE_KEY)
 }
 
-# Storage
 RECEIVER_PRIVATE_KEY = 'f101537e319568c765b2cc89698325604991dca57b9716b58016b253506caba4'
 receiver = {
     'account': "receiver@test",
